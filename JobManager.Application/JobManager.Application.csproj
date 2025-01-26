@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Models\Jobs\Customer\DailyJob1Handler\" />
+		<Folder Include="Models\Jobs\Customer\HourlyJob1Handler\" />
+		<Folder Include="Models\Jobs\Customer\HourlyJob2Handler\" />
+		<Folder Include="Models\Jobs\Customer\WeeklyJob1Handler\" />
+		<Folder Include="Models\Jobs\Order\DailyJob2Handler\" />
+		<Folder Include="Models\Jobs\Order\HourlyJob3Handler\" />
+		<Folder Include="Models\Jobs\Order\MonthlyJob1Handler\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Hangfire.Console" Version="1.4.3" />
+		<PackageReference Include="Hangfire.Core" Version="1.8.17" />
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.1" />
+		<PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+	</ItemGroup>
+
+</Project>
